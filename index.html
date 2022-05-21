@@ -1,9 +1,129 @@
-<h1>JavaScript Objectball</h1>
-<p>
-  Open your Chrome dev tools to see console output and trigger the debugger to
-  catch.
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Object Ball</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>JavaScript Objectball</h1>
+    <p>
+      Open your Chrome dev tools to see console output and trigger the debugger to
+      catch.
+    </p>
+    
+    <div>
+      <form id="player-score" name="player-score-search" class="player-score">
+        <label>Search for a player's score here: </label>
+        <input type="text" id="player-score-input" placeholder="Player Name">
+        <input type="submit" id="player-score-submit">
+      </form>
+      <label style="white-space: nowrap">Player's points scored: </label>
+      <div id="player-score-result" class="player-score output-area">
+        <p class="empty-result"><em>Player's</em> points scored: <strong>0</strong></p>
+      </div>
+    </div>
+    <br>
+    
+    <div>
+      <form id="shoe-size" class="shoe-size">
+        <label>Search for a player's shoe size here: </label>
+        <input type="text" id="shoe-size-input" placeholder="Player Name">
+        <input type="submit" id="shoe-size-submit">
+      </form>
+      <label style="white-space: nowrap">Player's shoe size: </label>
+      <div id="shoe-size-result" class="shoe-size output-area">
+        <p class="empty-result"><em>Player's</em> shoe size: <strong>0</strong></p>
+      </div>
+    </div>
+    <br>
 
-<script src="./src/00-objectball.js"></script>
-<script src="./src/01-simple-debug.js"></script>
-<!-- <script src="./src/02-advanced-debug.js"></script> -->
+    <div>
+      <form id="team-colors" class="team-colors">
+        <label>Search for a team's colors here: </label>
+        <input type="text" id="team-colors-input" placeholder="Team Name">
+        <input type="submit" id="team-colors-submit">
+      </form>
+      <label style="white-space: nowrap">Team colors: </label>
+      <div id="team-colors-result" class="team-colors output-area">
+        <p class="empty-result"><em>Team's</em> colors: <strong>0</strong></p>
+      </div>
+    </div>
+    <br>
+
+    <div>
+      <form id="jersey-number" class="jersey-number">
+        <label>Search for a list of a team's jersey numbers here: </label>
+        <input type="text" id="jersey-number-input" placeholder="Team Name">
+        <input type="submit" id="jersey-number-submit">
+      </form>
+      <label style="white-space: nowrap">Team's jersey numbers: </label>
+      <div id="jersey-number-result" class="jersey-number output-area">
+        <p class="empty-result"><em>Team's</em> jersey numbers: <strong>0</strong></p>
+      </div>
+    </div>
+    <br>
+
+    <div>
+      <form id="player-stats" class="player-stats">
+        <label>Search for a player's stats here: </label>
+        <input type="text" id="player-stats-input" placeholder="Player Name">
+        <input type="submit" id="player-stats-submit">
+      </form>
+      <label style="white-space: nowrap">Player's stats: </label>
+      <div id="player-stats-result" class="player-stats output-area">
+        <p class="result">
+          <table>
+            <thead>
+              <th colSpan="2">Player's Name</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>number</td>
+                <td class="data-column"></td>
+              </tr>
+              <tr>
+                <td>shoe</td>
+                <td class="data-column"></td>
+              </tr>
+              <tr>
+                <td>points</td>
+                <td class="data-column"></td>
+              </tr>
+              <tr>
+                <td>rebounds</td>
+                <td class="data-column"></td>
+              </tr>
+              <tr>
+                <td>assists</td>
+                <td class="data-column"></td>
+              </tr>
+              <tr>
+                <td>steals</td>
+                <td class="data-column"></td>
+              </tr>
+              <tr>
+                <td>blocks</td>
+                <td class="data-column"></td>
+              </tr>
+              <tr>
+                <td>slamDunks</td>
+                <td class="data-column"></td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+      </div>
+    </div>
+    <br>
+
+    <div id="big-shoe-rebounds-result" class="big-shoe-rebounds output-area">
+      <p class="empty-result"><em>PLayer's name</em> total number of rebounds is <strong>0</strong>. Fun fact, he also has the biggest shoe size.</p>
+    </div>
+    <br>
+
+    <script src="./src/00-objectball.js"></script>
+    <!--<script src="./src/01-simple-debug.js"></script>
+    <script src="./src/02-advanced-debug.js"></script> -->    
+    </body>
+</html>
